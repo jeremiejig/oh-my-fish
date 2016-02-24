@@ -7,6 +7,7 @@ function omf.cli.remove -a name
     switch $code
     case 0
       echo (omf::em)"$name successfully removed."(omf::off)
+      omf.cli.reload
     case 1
       echo (omf::err)"$name could not be removed."(omf::off) 1^&2
     case 2

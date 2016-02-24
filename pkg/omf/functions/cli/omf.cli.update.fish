@@ -23,4 +23,6 @@ function omf.cli.update
   for package in $packages
     omf.packages.update $package
   end
+
+  omf.cli.reload
 end
